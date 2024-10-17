@@ -16,3 +16,7 @@ Neural Architecture Search (NAS) has emerged as a key technique for automaticall
 - **Multi-Objective NAS**: We incorporate objectives such as accuracy, latency, and energy efficiency to create robust models suitable for real-world applications.
 - **Hardware-Aware Optimization**: We optimize models to perform well on resource-constrained devices like edge devices and IoT devices.
 - **Experiments on CIFAR-10 and Caltech-256**: Models are trained and evaluated on two benchmark datasets to compare their performance across different tasks.
+
+## Github structure
+
+we have three branches apart from main branch.
