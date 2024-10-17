@@ -1,16 +1,18 @@
-# EfficientNet (B0-B7) with CIFAR-10 Classification
+# Multi-Strategy NAS Optimization of EfficientNet
 
-This project explores the use of EfficientNet models (from B0 to B7) for image classification on the CIFAR-10 dataset. The models are trained with mixed precision to improve performance and reduce memory usage.
+This project explores the performance of different EfficientNet models (B0 to B7) using Neural Architecture Search (NAS) for image classification tasks on the CIFAR-10 and Caltech-256 datasets. The objective is to analyze the scalability, accuracy, and efficiency of these models and propose strategies to optimize them for deployment on resource-constrained devices.
+
+## Project Overview
+
+Neural Architecture Search (NAS) has emerged as a key technique for automatically designing optimal deep neural network architectures. In this project, we aim to:
+
+- Explore multi-objective optimization strategies for NAS, focusing on EfficientNet models.
+- Evaluate the performance of EfficientNet models (B0 to B7) on CIFAR-10 and Caltech-256 datasets.
+- Investigate hardware-aware NAS techniques to balance model complexity, accuracy, energy consumption, and latency.
 
 ## Features
 
-- **EfficientNet B0 to B7**: Pre-trained models from the EfficientNet family (B0 to B7) on ImageNet used for CIFAR-10 classification.
-- **Mixed Precision Training**: Increases efficiency by using `float16` for certain operations, saving memory and speeding up training.
-- **CIFAR-10 Dataset**: A well-known dataset consisting of 32x32 color images across 10 different classes.
-- **Custom Top Layers**: Adaptation of EfficientNet models to work with the CIFAR-10 dataset.
-- **Model Checkpoints**: Automatically saves the best performing model during training for future use.
-
-## Usage
-
-To experiment with different EfficientNet models (B0 to B7), you can easily switch the model in the script by changing the line where the base model is loaded.
-
+- **EfficientNet B0-B7**: We evaluate the performance of EfficientNet models from B0 to B7 using NAS for optimizing both accuracy and efficiency.
+- **Multi-Objective NAS**: We incorporate objectives such as accuracy, latency, and energy efficiency to create robust models suitable for real-world applications.
+- **Hardware-Aware Optimization**: We optimize models to perform well on resource-constrained devices like edge devices and IoT devices.
+- **Experiments on CIFAR-10 and Caltech-256**: Models are trained and evaluated on two benchmark datasets to compare their performance across different tasks.
